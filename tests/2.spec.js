@@ -45,7 +45,7 @@ test('Поиск селекторов по классу', async ({ page }) => {
     await expect(page.getByRole('heading', { name: '✅ Заказ принят!'})).toBeVisible();
 
   });
-  test.only('Поиск селекторов по атрибуту и значению', async ({ page }) => {
+  test('Поиск селекторов по атрибуту и значению', async ({ page }) => {
     await page.goto('file:///Users/sniper/pw6/burger-order.html');
     await page.locator('[name="customerName"]').fill('Sniper');
 
