@@ -49,8 +49,6 @@ let dog = {
 }
 
 dog.isSweet = true;
-console.log(dog.isSweety);
-
 
 const {email, password, username } = user;
 
