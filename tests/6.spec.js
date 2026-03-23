@@ -5,7 +5,7 @@ import { App } from '../src/pages/app.page';
 import { UserBuilder } from '../src/helpers/builders/index';
 
 
-test.only('Пользователь может зарегистрироваться используя email и пароль page object', async ({ page }) => {
+test('Пользователь может зарегистрироваться используя email и пароль page object', async ({ page }) => {
 //arrange
     const app = new App(page);
 
