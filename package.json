@@ -1,27 +1,31 @@
 {
-  "name": "pw6",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx playwright test",
-    "test:ui": "npx playwright test --ui"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mnmlsniper/pw6.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/mnmlsniper/pw6/issues"
-  },
-  "homepage": "https://github.com/mnmlsniper/pw6#readme",
-  "devDependencies": {
-    "@faker-js/faker": "^10.3.0",
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.0"
-  }
+	"name": "pw6",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx playwright test",
+		"test:ui": "npx playwright test --ui",
+		"biome:check": "biome check --write",
+		"biome:format": "biome format --write",
+		"biome:ci": "biome ci --reporter=github"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mnmlsniper/pw6.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/mnmlsniper/pw6/issues"
+	},
+	"homepage": "https://github.com/mnmlsniper/pw6#readme",
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.10",
+		"@faker-js/faker": "^10.3.0",
+		"@playwright/test": "^1.58.2",
+		"@types/node": "^25.3.0"
+	}
 }

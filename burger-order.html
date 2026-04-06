@@ -605,7 +605,7 @@
         });
         
         // Инициализация при загрузке страницы
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', () => {
             // Устанавливаем начальное значение явно
             const quantityInput = document.getElementById('quantity');
             quantityInput.value = "1";
@@ -613,7 +613,7 @@
             updateCounterButtons();
             
             // Добавляем обработчик для ручного ввода
-            quantityInput.addEventListener('input', function() {
+            quantityInput.addEventListener('input', () => {
                 updateCounterButtons();
             });
         });
